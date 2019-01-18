@@ -110,7 +110,7 @@ var map, marker1, marker2, marker3,
 
 	  		map = new google.maps.Map(mapWrap, {
 	  				center: center,
-	  				zoom: 5,
+	  				zoom: 6,
         			disableDefaultUI: true
 
         	});

@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Travely</title>
 	<link rel="icon" href="favicon.png" type="image/png">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
@@ -19,16 +19,48 @@
 					<nav>
 						<ul class="menu">
 							<li class="menu__item">
-								<a href="#" data-icon="airplane">let's travel</a>
+								<a href="#intro">
+									<div>
+										<svg width="32" height="32">
+											<use xlink:href="#airplane"></use>
+										</svg>
+									</div>
+									<span>let's travel</span>
+								</a>
+								<div class="menu__arrow-down"></div>
 							</li>
 							<li class="menu__item">
-								<a href="#destinations" data-icon="globe">cities</a>
+								<a href="#destinations">
+									<div>
+										<svg  width="20" height="20">
+											<use xlink:href="#globe"></use>
+										</svg>
+									</div>
+									<span>cities</span>
+								</a>
+								<div class="menu__arrow-down"></div>
 							</li>
 							<li class="menu__item">
-								<a href="index.html#offers" data-icon="car">best offer</a>
+								<a href="#offers">
+									<div>
+										<svg  width="24" height="24">
+											<use xlink:href="#car"></use>
+										</svg>
+									</div>
+									<span>best offer</span>
+								</a>
+								<div class="menu__arrow-down"></div>
 							</li>
 							<li class="menu__item">
-								<a href="#lastminute" data-icon="cup">hot offer</a>
+								<a href="#lastminute">
+									<div>
+										<svg  width="20" height="20">
+											<use xlink:href="#cup"></use>
+										</svg>
+									</div>
+									<span>hot offer</span>
+								</a>
+								<div class="menu__arrow-down"></div>
 							</li>
 						</ul>
 					</nav>
@@ -37,12 +69,11 @@
 		</div>
 	</header>
 	<main>
-		<section class="intro">
+		<section id="intro" class="intro">
 				<div class="intro__slides">
 					<div class="intro__slide">
 						<div class="intro__container">
-							<div class="intro__bg" style="background-image: url('img/intro_bg7.jpg');">
-							</div>
+							<div class="intro__bg" style="background-image: url('img/intro_bg7.jpg');"></div>
 							<div class="container">
 								<div class="introinfo">
 									<span class="introinfo__subtitle">experience</span>
@@ -150,7 +181,7 @@
 							</div>
 							<div class="flex-item destinfo--right">
 								<span class="destinfo__description">
-									From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East, TRAVELY offers escorted tours throughout Canada and the United States. 
+									From the breathtaking national parks in the Western U.S. to the charming Southern towns and historic cities in the East, TRAVELY offers escorted tours throughout Canada and the United States.
 								</span>
 							</div>
 						</div>
@@ -165,12 +196,11 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">399</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
-								<a href="#" class="tour__more">
-									<span>find out more</span>
-								</a>
+								<a href="#" class="tour__more">find out more</a>
 							</div>
 						</div>
 					</div>
@@ -183,6 +213,7 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">259</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
@@ -201,6 +232,7 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">920</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
@@ -219,6 +251,7 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">210</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
@@ -237,6 +270,7 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">399</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
@@ -255,6 +289,7 @@
 								<span class="price__start">starting at</span>
 								<span class="price__cost" data-currancy="&euro;">359</span>
 							</div>
+							<div class="tour__arrow-up"></div>
 							<div class="tour">
 								<span class="tour__country">china</span>
 								<span class="tour__location">Thousand Pillar Temple EXPEDITION</span>
@@ -289,14 +324,12 @@
 							</div>
 							<div class="offerdata__info flex-item">
 								<span class="offerdata__country">kenia</span>
-								<span  class="offerdata__description">A fantastic 4-day Camping Safari to Kenya's Premier Reserve - <strong>The Masai Mara</strong>.
+								<span class="offerdata__description">A fantastic 4-day Camping Safari to Kenya's Premier Reserve - <strong>The Masai Mara</strong>.
 								</span>
-								<a href="#" class="offerdata__more">
-									<span>find out more</span>
-								</a>
+								<a href="#" class="offerdata__more">find out more</a>
 							</div>
 							<div class="offerdata__btn">
-								<a href="#"><span>view all</span></a>
+								<a href="#">view all</a>
 							</div>
 						</div>
 					</div>
@@ -307,8 +340,7 @@
 							<span class="offerinfo__logo">best offers</span>
 							<span class="offerinfo__subtitle">experience</span>
 							<h2 class="offerinfo__title">AFRICAN SAFARI</h2>
-							<span class="offerinfo__description">
-								Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors, its hospitality just gets better.
+							<span class="offerinfo__description">Africa has been growing as a tourist destination, and as it becomes more and more accustomed to receiving so many visitors, its hospitality just gets better.
 							</span>
 						</div>
 						<div class="offerdata flex-row">
@@ -320,38 +352,120 @@
 								<span class="offerdata__country">kenia</span>
 								<span  class="offerdata__description">A fantastic 4-day Camping Safari to Kenya's Premier Reserve - <strong>The Masai Mara</strong>.
 								</span>
-								<a href="#" class="offerdata__more">
-									<span>find out more</span>
-								</a>
+								<a href="#" class="offerdata__more">find out more</a>
 							</div>
 							<div class="offerdata__btn">
-								<a href="#"><span>view all</span></a>
+								<a href="#">view all</a>
 							</div>
 						</div>
-					</div>
-				</div>	
+					</div>				
+				</div>
 			</div>
 		</section>
-		<sections class="befirst">			
+		<section class="befirst">			
 				<h2 class="befirst__title">find out first</h2>
 				<span class="befirst__subtitle">about the best offers</span>			
-		</sections>
+		</section>
 		<section id="lastminute" class="lastminute">
 			<div class="lastminute__slides">
 				<div class="lastminute__slide">
-					<div class="lmoffer" style="background-image: url('img/lastminute_bg.jpg');">		
-						<div class="lmdata flex-row">
-							<div class="lmdata__price flex-item">
-								<span class="lmdata__start">starting at</span>
-								<span class="lmdata__cost" data-currancy="&euro;">359</span>	
+					<div class="lmoffer-wrap">
+						<div class="lmoffer" style="background-image: url('img/lastminute_bg.jpg');">		
+							<div class="container">
+								<div class="journey">
+									<div class="journey-wrap">
+										<h3 class="journey__title">long journey's</h3>
+										<div class="journey__count">
+											<time datetime="">today</time>
+											<span class="journey__number">34,098</span>
+											<span class="journey__departure">departures</span>
+										</div>
+										<div class="journey__arrow-down"></div>
+									</div>
+								</div>
+								<div class="lmdata flex-row">
+									<div class="lmdata__price flex-item">
+										<div class="lmdata__icon">
+											<svg width="32" height="32">
+												<use xlink:href="#airplane"></use>
+											</svg>
+										</div>
+										<div class="lmdata__money">
+											<span class="lmdata__start">starting at</span>
+											<span class="lmdata__cost" data-currancy="&euro;">359</span>
+										</div>
+									</div>
+									<div class="lmdata__info flex-item">
+										<span class="lmdata__country">taiwan</span>
+										<span  class="lmdata__description">It is a modern cosmopolitan metropolis with a lively and diversified face, filled with exuberance.
+										</span>
+										<a href="#" class="lmdata__more">
+											<span>find out more</span>
+										</a>
+									</div>
+								</div>
 							</div>
-							<div class="lmdata__info flex-item">
-								<span class="lmdata__country">taiwan</span>
-								<span  class="lmdata__description">Taiwan It is a modern cosmopolitan metropolis with a lively and diversified face, filled with exuberance.
-								</span>
-								<a href="#" class="lmdata__more">
-									<span>find out more</span>
-								</a>
+						</div>
+						<div class="lmpanel">
+							<div class="container flex-row">							
+								<div class="lmpanel__countdown flex-item">
+									<div class="lmpanel__arrow-up"></div>
+									<span>last minute</span>
+								</div>						
+								<div class="lmpanel__btn flex-item">
+									<a href="#">check out</a>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lastminute__slide">
+					<div class="lmoffer-wrap">
+						<div class="lmoffer" style="background-image: url('img/lastminute_bg.jpg');">		
+							<div class="container">
+								<div class="journey">
+									<div class="journey-wrap">
+										<h3 class="journey__title">long journey's</h3>
+										<div class="journey__count">
+											<time datetime="">today</time>
+											<span class="journey__number">34,098</span>
+											<span class="journey__departure">departures</span>
+										</div>
+										<div class="journey__arrow-down"></div>
+									</div>
+								</div>
+								<div class="lmdata flex-row">
+									<div class="lmdata__price flex-item">
+										<div class="lmdata__icon">
+											<svg width="32" height="32">
+												<use xlink:href="#airplane"></use>
+											</svg>
+										</div>
+										<div class="lmdata__money">
+											<span class="lmdata__start">starting at</span>
+											<span class="lmdata__cost" data-currancy="&euro;">359</span>
+										</div>
+									</div>
+									<div class="lmdata__info flex-item">
+										<span class="lmdata__country">taiwan</span>
+										<span  class="lmdata__description">It is a modern cosmopolitan metropolis with a lively and diversified face, filled with exuberance.
+										</span>
+										<a href="#" class="lmdata__more">
+											<span>find out more</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lmpanel">
+							<div class="container flex-row">							
+								<div class="lmpanel__countdown flex-item">
+									<div class="lmpanel__arrow-up"></div>
+									<span>last minute</span>
+								</div>						
+								<div class="lmpanel__btn flex-item">
+									<a href="#">check out</a>								
+								</div>
 							</div>
 						</div>
 					</div>
@@ -366,9 +480,30 @@
 			<div class="flex-row">
 				<div class="flex-item footer__left">
 					<ul class="socials">
-						<li class="social"><a href="#">f</a></li>
-						<li class="social"><a href="#">p</a></li>
-						<li class="social"><a href="#">t</a></li>
+						<li class="social">
+							<a href="#">
+								<svg  width="13" height="13">
+									<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+							<div class="social__arrow-down"></div>
+						</li>
+						<li class="social">
+							<a href="#">
+								<svg  width="13" height="13">
+									<use xlink:href="#pinterest"></use>
+								</svg>
+							</a>
+							<div class="social__arrow-down"></div>
+						</li>
+						<li class="social">
+							<a href="#">
+								<svg  width="13" height="13">
+									<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+							<div class="social__arrow-down"></div>
+						</li>
 					</ul>
 					<span class="footer__rights">© TRAVELY 2014 - All rights reserved</span>
 				</div>
@@ -381,16 +516,46 @@
 					TRAVELY, New Alresford, Hampshire, SO24 0AA
 					</span>
 					<span class="footer__developer">Created by 
-						<a href="#"> EA<sub>93</sub></a>
+						<a href="#">EA<sub>93</sub></a>
 					</span>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js">		
+	<svg style="display: none;">
+		<symbol id="airplane" viewbox="0 0 512 512">
+			<path d="M468.829,89.302c-33.408-19.471-71.368-9.128-97.325,2.976l-77.378,36.082l-133.08-66.934l-79.253,3.405l109.893,111.408   l-70.035,33.269l-72.865-27.731L0,204.525l44.089,54.749c-4.658,5.557-8.879,13.381-5.047,21.599   c5.005,10.732,19.798,16.141,44.063,16.14c4.976,0,10.351-0.227,16.12-0.683c26.636-2.104,55.514-8.903,73.571-17.323   l276.596-128.979c23.89-11.141,35.79-22.839,36.38-35.765C486.078,107.559,483.387,97.784,468.829,89.302z M440.938,131.901   L164.343,260.881c-15.384,7.174-40.641,13.185-64.345,15.313c-24.228,2.175-37.182-0.556-41.5-2.875   c0.889-1.217,2.549-3.129,5.612-5.825l7.184-6.323l-39.708-49.308l17.986-8.388l72.943,27.763l103.169-49.009l-98-99.352   l29.021-1.247l137.089,68.949l86.16-40.176c31.467-14.673,57.979-15.957,78.803-3.823l0.001,0.001   c5.247,3.057,7.081,5.724,7.033,6.77C465.789,113.423,465.188,120.595,440.938,131.901z"/>
+		</symbol>
+		<symbol id="car" viewbox="0 0 512 512">
+			<path d="M96,277.333c-29.397,0-53.333,23.936-53.333,53.333S66.603,384,96,384s53.333-23.936,53.333-53.333    S125.397,277.333,96,277.333z M96,362.667c-17.643,0-32-14.357-32-32c0-17.643,14.357-32,32-32c17.643,0,32,14.357,32,32    C128,348.309,113.643,362.667,96,362.667z"/>
+			<path d="M416,277.333c-29.397,0-53.333,23.936-53.333,53.333S386.603,384,416,384s53.333-23.936,53.333-53.333    S445.397,277.333,416,277.333z M416,362.667c-17.643,0-32-14.357-32-32c0-17.643,14.357-32,32-32c17.643,0,32,14.357,32,32    C448,348.309,433.643,362.667,416,362.667z"/>
+			<path d="M448,213.333h-18.048c-6.592,0-13.056-2.261-18.219-6.4l-84.053-67.243C318.251,132.16,306.411,128,294.357,128H140.16    c-17.877,0-34.453,8.875-44.373,23.744l-18.155,27.264C72.192,187.136,63.104,192,53.333,192C23.936,192,0,215.936,0,245.333V288    c0,29.397,23.936,53.333,53.333,53.333c5.888,0,10.667-4.779,10.667-10.667S59.221,320,53.333,320c-17.643,0-32-14.357-32-32    v-42.667c0-17.643,14.357-32,32-32c16.939,0,32.64-8.405,42.048-22.507l18.155-27.243c5.952-8.917,15.915-14.251,26.624-14.251    h154.197c7.253,0,14.336,2.496,20.011,7.019l84.053,67.221c8.896,7.147,20.117,11.093,31.552,11.093H448    c31.296,0,42.667,31.893,42.667,53.333c0,21.013-16.085,32-32,32c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667    C489.067,341.333,512,318.4,512,288C512,251.797,489.579,213.333,448,213.333z"/>
+			<path d="M373.333,320H138.667c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667h234.667    c5.888,0,10.667-4.779,10.667-10.667S379.221,320,373.333,320z"/>
+			<path d="M352,213.333h-96v-32c0-5.888-4.779-10.667-10.667-10.667s-10.667,4.779-10.667,10.667V224    c0,5.888,4.779,10.667,10.667,10.667H352c5.888,0,10.667-4.779,10.667-10.667S357.888,213.333,352,213.333z"/>
+			<path d="M202.667,213.333h-68.075l13.632-27.221c2.624-5.269,0.491-11.669-4.779-14.315c-5.291-2.624-11.669-0.512-14.315,4.779    l-21.333,42.667c-1.664,3.285-1.472,7.232,0.469,10.368s5.376,5.056,9.067,5.056h85.333c5.888,0,10.667-4.779,10.667-10.667    S208.555,213.333,202.667,213.333z"/>
+			<path d="M288,256h-21.333c-5.888,0-10.667,4.779-10.667,10.667s4.779,10.667,10.667,10.667H288    c5.888,0,10.667-4.779,10.667-10.667S293.888,256,288,256z"/>
+		</symbol>
+		<symbol id="cup" viewbox="0 0 16 19">
+			<path fill-rule="evenodd" d="M13.201,11.965 C13.020,15.491 10.144,18.296 6.612,18.296 C2.964,18.296 0.006,15.303 0.006,11.613 L0.006,6.337 L12.524,6.337 L13.219,6.337 L16.000,6.337 L16.000,11.965 L13.201,11.965 ZM12.524,7.040 L0.702,7.040 L0.702,11.613 C0.702,14.910 3.353,17.592 6.612,17.592 C9.872,17.592 12.524,14.910 12.524,11.613 L12.524,7.040 ZM15.305,7.040 L13.219,7.040 L13.219,11.261 L15.305,11.261 L15.305,7.040 ZM13.219,18.999 L0.006,18.999 L0.006,18.296 L6.612,18.296 L13.219,18.296 L13.219,18.999 ZM9.046,1.061 L9.742,1.061 L9.742,4.227 L9.046,4.227 L9.046,1.061 ZM6.265,0.005 L6.960,0.005 L6.960,4.227 L6.265,4.227 L6.265,0.005 ZM3.483,1.061 L4.179,1.061 L4.179,4.227 L3.483,4.227 L3.483,1.061 Z"/>
+		</symbol>
+		<symbol id="globe" viewbox="0 0 17 17">
+			<path fill-rule="evenodd"  d="M8.501,-0.002 C8.499,-0.002 8.497,-0.002 8.494,-0.002 C8.493,-0.002 8.492,-0.002 8.491,-0.002 C8.488,-0.002 8.484,-0.002 8.481,-0.002 C3.792,0.009 -0.004,3.809 -0.004,8.495 C-0.004,13.179 3.792,16.979 8.481,16.991 C8.484,16.991 8.488,16.992 8.491,16.992 C8.492,16.992 8.493,16.992 8.494,16.992 C8.497,16.992 8.499,16.992 8.501,16.992 C13.198,16.992 17.007,13.186 17.007,8.495 C17.007,3.802 13.198,-0.002 8.501,-0.002 ZM8.842,5.083 C9.743,5.057 10.621,4.939 11.466,4.734 C11.721,5.735 11.879,6.890 11.903,8.155 L8.842,8.155 L8.842,5.083 ZM8.842,4.403 L8.842,0.731 C9.759,0.984 10.688,2.206 11.281,4.079 C10.495,4.269 9.679,4.379 8.842,4.403 ZM8.161,0.723 L8.161,4.403 C7.317,4.379 6.495,4.266 5.703,4.075 C6.300,2.190 7.238,0.963 8.161,0.723 ZM8.161,5.082 L8.161,8.155 L5.078,8.155 C5.103,6.887 5.262,5.733 5.516,4.730 C6.368,4.937 7.252,5.057 8.161,5.082 ZM4.393,8.155 L0.685,8.155 C0.760,6.408 1.411,4.807 2.455,3.539 C3.212,3.955 4.016,4.296 4.858,4.552 C4.583,5.636 4.418,6.858 4.393,8.155 ZM4.393,8.835 C4.418,10.131 4.583,11.353 4.858,12.437 C4.016,12.693 3.212,13.033 2.455,13.451 C1.411,12.183 0.760,10.581 0.685,8.835 L4.393,8.835 ZM5.078,8.835 L8.161,8.835 L8.161,11.904 C7.252,11.927 6.368,12.049 5.516,12.257 C5.261,11.255 5.103,10.100 5.078,8.835 ZM8.161,12.583 L8.161,16.266 C7.237,16.025 6.299,14.798 5.702,12.911 C6.494,12.719 7.316,12.606 8.161,12.583 ZM8.842,16.258 L8.842,12.583 C9.680,12.606 10.495,12.717 11.281,12.906 C10.689,14.781 9.760,16.004 8.842,16.258 ZM8.842,11.904 L8.842,8.835 L11.903,8.835 C11.879,10.099 11.721,11.252 11.467,12.253 C10.621,12.047 9.744,11.927 8.842,11.904 ZM12.588,8.835 L16.318,8.835 C16.243,10.581 15.592,12.182 14.549,13.450 C13.785,13.030 12.974,12.687 12.125,12.430 C12.399,11.348 12.564,10.129 12.588,8.835 ZM12.588,8.155 C12.564,6.860 12.399,5.639 12.124,4.556 C12.973,4.299 13.783,3.956 14.547,3.537 C15.591,4.804 16.243,6.406 16.318,8.155 L12.588,8.155 ZM14.078,3.018 C13.401,3.377 12.686,3.675 11.940,3.900 C11.542,2.622 10.984,1.579 10.324,0.893 C11.772,1.241 13.066,1.990 14.078,3.018 ZM6.652,0.900 C5.996,1.584 5.440,2.622 5.043,3.894 C4.304,3.669 3.596,3.375 2.925,3.018 C3.931,1.996 5.214,1.249 6.652,0.900 ZM2.923,13.969 C3.594,13.611 4.303,13.317 5.043,13.091 C5.439,14.365 5.995,15.405 6.652,16.089 C5.213,15.739 3.929,14.992 2.923,13.969 ZM10.323,16.095 C10.984,15.411 11.543,14.366 11.941,13.086 C12.688,13.312 13.403,13.608 14.080,13.970 C13.068,14.999 11.773,15.749 10.323,16.095 Z"/>
+		</symbol>
+		<symbol id="facebook" viewbox="0 0 10 16">
+			<path fill-rule="evenodd" d="M6.429,3.047 L9.000,3.047 L9.000,-0.001 L6.429,-0.001 C4.302,-0.001 2.571,1.794 2.571,3.999 L2.571,5.538 L-0.000,5.538 L-0.000,8.595 L2.571,8.595 L2.571,15.999 L5.786,15.999 L5.786,8.595 L9.000,8.595 L9.000,5.538 L5.786,5.538 L5.786,3.971 C5.786,3.442 6.125,3.047 6.429,3.047 Z"/>
+		</symbol>
+		<symbol id="pinterest" viewbox="0 0 14 17">
+			<path fill-rule="evenodd" d="M6.376,12.296 C7.857,13.398 10.567,12.731 11.738,11.747 C13.424,10.328 14.203,7.449 13.954,5.171 C13.676,2.622 11.263,0.372 8.409,0.057 C4.020,-0.429 0.030,2.226 -0.000,6.450 C-0.014,8.437 0.635,9.689 2.403,10.377 C3.610,9.193 2.177,8.423 2.033,7.089 C1.652,3.546 5.917,0.132 9.704,2.339 C12.342,3.877 11.894,10.473 8.687,11.108 C8.049,11.235 7.248,11.037 6.932,10.742 C5.408,9.330 8.193,6.854 7.301,4.805 C6.527,3.032 4.307,4.452 4.066,5.992 C3.936,6.829 4.341,7.635 4.343,8.367 C4.350,10.110 3.240,12.481 2.956,14.213 C2.848,14.887 2.749,16.268 2.911,16.976 C2.902,16.984 2.893,16.991 2.884,16.999 L4.043,16.999 C4.854,15.639 5.409,13.593 5.822,11.838 C6.078,11.652 6.172,12.142 6.376,12.296 Z"/>
+		</symbol>
+		<symbol id="twitter" viewbox="0 0 13 16">
+			<path fill-rule="evenodd" d="M3.833,9.283 C4.155,9.596 4.546,9.752 5.008,9.752 L8.321,9.752 C8.782,9.752 9.178,9.912 9.506,10.230 C9.835,10.550 10.000,10.932 10.000,11.379 C10.000,11.824 9.835,12.207 9.506,12.525 C9.178,12.844 8.782,13.003 8.322,13.003 L5.009,13.003 C3.628,13.003 2.448,12.529 1.469,11.578 C0.489,10.627 -0.001,9.483 -0.001,8.143 L-0.001,1.629 C-0.001,1.169 0.163,0.784 0.489,0.471 C0.815,0.159 1.214,0.002 1.684,0.002 C2.141,0.002 2.534,0.161 2.859,0.480 C3.186,0.798 3.350,1.181 3.350,1.628 L3.350,3.986 L8.068,3.986 C8.497,3.986 8.864,4.134 9.169,4.430 C9.475,4.725 9.627,5.080 9.627,5.494 C9.627,5.906 9.475,6.261 9.170,6.557 C8.865,6.851 8.500,7.000 8.072,7.000 L3.350,7.000 L3.350,8.142 C3.350,8.590 3.510,8.969 3.833,9.283 Z"/>
+		</symbol>
+	</svg>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js">		
 	</script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">	
 	</script>
+	<script src="js/smooth_scroll.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.intro__slides').slick({
@@ -412,9 +577,19 @@
 			});
 		});
 	</script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap" type="text/javascript">  	
+	<script>
+		$(document).ready(function(){
+			$('.lastminute__slides').slick({
+				dots : false,
+				arrows: true,
+				autoplay: true,
+				fade: true,
+				autoplaySpeed: 2500
+			});
+		});
 	</script>
-	
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDXUTMWWK4qZwIsU3AudvJ9UC48L9IdA8&callback=initMap" type="text/javascript">  	
+	</script>	
 	<script src="js/map.js"></script>
 </body>
 </html>
