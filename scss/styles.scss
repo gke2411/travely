@@ -117,15 +117,6 @@ body{
 		border-top: 20px solid transparent;
 		z-index: 1;				
 	}
-	// &__icon{
-	// 	display: block;
-	// 	margin: auto;
-	// 	height: 32px;
-	// 	width: 32px;
-	// 	& path{
-	// 		fill: #000;
-	// 	}
-	// }
 }
 .footer{
 	background-color: #fd5c08;
@@ -157,8 +148,6 @@ body{
 	}
 	&__address{
 		display: block;
-		// width: 500px;
-		// padding: 25px 0;
 		font-size: 1rem;
 		line-height: 1.6;
 		text-align: right;
@@ -532,7 +521,6 @@ body{
 
 .offer{
 	display: block;
-	// height: 100%;
 	width: 100%;
 	height: 960px;
 	background-color: #fff;
@@ -659,8 +647,7 @@ body{
 			padding-right: 5px;
 			background-image: url('../img/arrow-right-orange.svg');
 			background-size: contain;
-			background-repeat: no-repeat;
-			
+			background-repeat: no-repeat;			
 		}
 		&:hover,
 		&:focus,
@@ -844,6 +831,7 @@ body{
 			text-decoration: none;
 			text-transform: uppercase;
 			text-align: center;
+			color: #000;
 			background-color: #fff;
 			padding: 15px 0;
 			transition: all .4s  ease-in;
@@ -1019,7 +1007,6 @@ body{
 	&-wrap{
 		width: 100%;
 		height: 100%;
-		// padding: 30px;
 	}
 	&__title{
 		height: 65%;
