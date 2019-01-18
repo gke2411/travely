@@ -418,6 +418,9 @@ body {
   height: 600px;
   width: 100%;
   background-color: lightgrey; }
+  .map__title {
+    font-size: 0;
+    visibility: hidden; }
 
 .befirst {
   height: 350px;
@@ -897,7 +900,7 @@ body {
   .journey__count {
     height: 35%;
     padding: 0 30px 30px 30px; }
-  .journey time {
+  .journey__time {
     display: block;
     text-transform: uppercase;
     font-size: 1.6rem;
