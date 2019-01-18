@@ -477,6 +477,10 @@ body{
 	height: 600px;
 	width: 100%;
 	background-color: lightgrey;
+	&__title{
+		font-size: 0;
+		visibility: hidden;
+	}
 }
 
 .befirst{
